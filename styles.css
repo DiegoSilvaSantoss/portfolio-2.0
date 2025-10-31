@@ -72,3 +72,50 @@ main {
         left: 100%;
     }
 }
+
+
+/* RESPONSIVIDADE PARA CELULARES*/
+  @media (max-width: 768px) {
+      main {
+        gap: 20px;
+        padding: 10px;
+      }
+
+      main > img {
+        max-width: 100%;
+      }
+
+      .container {
+        --width: 120px;
+        --height: 60px;
+      }
+
+      .container.reverse {
+        --width: 150px;
+        --height: 120px;
+      }
+
+      .item {
+        animation-duration: 12s;
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        gap: 15px;
+      }
+
+      .container {
+        --width: 80px;
+        --height: 50px;
+      }
+
+      .container.reverse {
+        --width: 100px;
+        --height: 80px;
+      }
+
+      .item {
+        animation-duration: 14s;
+      }
+    }
