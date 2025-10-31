@@ -89,4 +89,21 @@ main {
 .container.reverse .item {
     animation: reverseRun 10s ease infinite;
 }
+
+.container.reverse .item {
+    animation: reverseRun 10s linear infinite;
+}
+
+.item img {
+    width: 100%;
+}
+
+.container:hover .item{
+    animation-play-state: paused;
+    filter: grayscale(1);
+}
+
+.container .item:hover {
+    filter: grayscale(0);
+}
   }
