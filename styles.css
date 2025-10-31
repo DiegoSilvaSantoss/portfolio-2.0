@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-boody {
+body {
     background-color: #e5e5e5;
 }
 
@@ -76,20 +76,17 @@ main {
 
 /* RESPONSIVIDADE PARA CELULARES*/
   @media only screen and (max-width: 768px) {
-    .container .carrosel .item img {
-        padding: 20px;
-    }
-
-    .container.reverse .carrosel .item img {
-        padding: 59px;
-    }
-
-    .container:hover .item{
-    animation-play-state: paused;
-    filter: grayscale(1);
+    .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 10s ease infinite;
+    animation-delay: calc(10 / var(--quantity) * var(--delay)) !important;
+    cursor: pointer;
 }
 
-.container .item:hover{
-    filter: grayscale(0);
+.container.reverse .item {
+    animation: reverseRun 10s ease infinite;
 }
   }
