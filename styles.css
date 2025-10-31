@@ -75,7 +75,7 @@ main {
 
 
 /* RESPONSIVIDADE PARA CELULARES*/
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1080px) {
     .item {
     width: var(--width);
     height: var(--height);
@@ -87,11 +87,11 @@ main {
 }
 
 .container.reverse .item {
-    animation: reverseRun 10s ease infinite;
+    animation: reverseRun 10s ease-in-out infinite;
 }
 
 .container.reverse .item {
-    animation: reverseRun 10s ease infinite;
+    animation: reverseRun 10s ease-in-out infinite;
 }
 
 .item img {
