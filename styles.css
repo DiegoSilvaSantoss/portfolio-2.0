@@ -91,7 +91,7 @@ main {
 }
 
 .container.reverse .item {
-    animation: reverseRun 10s linear infinite;
+    animation: reverseRun 10s ease infinite;
 }
 
 .item img {
